@@ -16,7 +16,7 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          echo <<'EOF'
+          cat <<'EOF'
               ➤ YN0060: │ @angular/cdk is listed by your project with version 19.2.18 (pfce34), which doesn't satisfy what @angular/material requests (19.2.17).
               ➤ YN0060: │ dompurify is listed by your project with version 3.2.6 (peb1b9), which doesn't satisfy what something.js requests (3.2.4).
               ➤ YN0086: │ Some peer dependencies are incorrectly met by your project; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code.
