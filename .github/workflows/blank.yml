@@ -21,9 +21,7 @@ jobs:
               ➤ YN0060: │ dompurify is listed by your project with version 3.2.6 (peb1b9), which doesn't satisfy what something.js requests (3.2.4).
               ➤ YN0086: │ Some peer dependencies are incorrectly met by your project; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code.
               ➤ YN0086: │ Some peer dependencies are incorrectly met by dependencies; run yarn explain peer-requirements for details.
-               [93m➤[39m YN0060: │ [38;5;166m@angular/[39m[38;5;173mcdk[39m is listed by your project with version [38;5;111m19.2.18[39m ([38;5;111mpfce34[39m), which doesn't satisfy what [38;5;166m@angular/[39m[38;5;173mmaterial[39m requests ([38;5;37m19.2.17[39m).
-               [93m➤[39m YN0060: │ [38;5;173mdompurify[39m is listed by your project with version [38;5;111m3.2.6[39m ([38;5;111mpeb1b9[39m), which doesn't satisfy what [38;5;173msomething.js[39m requests ([38;5;37m3.2.4[39m).
-               [93m➤[39m YN0086: │ Some peer dependencies are incorrectly met by your project; run [38;5;111myarn explain peer-requirements <hash>[39m for details, where [38;5;111m<hash>[39m is the six-letter p-prefixed code.
-               [93m➤[39m YN0086: │ Some peer dependencies are incorrectly met by dependencies; run [38;5;111myarn explain peer-requirements[39m for details.
             ➤ YN0000: └ Completed
           EOF
+      - name: Cat log
+        run: cat log
